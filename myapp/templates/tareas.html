@@ -1,0 +1,23 @@
+<H1>TAREAS</H1>
+
+{%for task in tasks%}
+
+<div>
+    <h1>Tarea: {{task.title}}</h1>
+
+    {%if task.done == False%}
+    <p>Tarea pendiente</p>
+    {%else%}
+    <p>Tarea realizada</p>
+    {%endif%}
+
+
+
+    <h2>Proyecto: {{task.project}}</h2>
+    <button>Delete</button>
+    <button>Update</button>
+    <button>Done &#9989; </button>
+
+</div>
+
+{%endfor%}

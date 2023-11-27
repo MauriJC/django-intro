@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+
+
+{%block content%}
+<H1>PROYECTOS</H1>
+
+
+
+{% for project in projects %}
+
+<div> {{project.name}} </div>
+
+{% endfor %}
+
+
+{%endblock%}
